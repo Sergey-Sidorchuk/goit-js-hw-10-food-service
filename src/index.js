@@ -1,3 +1,3 @@
-import './js/markupTpl.js';
-import './js/theme-mode.js';
+import './js/markUpTpl';
 import './styles.css';
+
