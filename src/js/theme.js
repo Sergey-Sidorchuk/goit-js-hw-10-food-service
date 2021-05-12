@@ -1,5 +1,5 @@
 const refs = {
-    body: document.querySelector('body'),
+    body: document.body,
     switcher: document.querySelector('#theme-switch-toggle'),
 };
 
@@ -16,8 +16,8 @@ if (localStorage.getItem('theme')) {
     refs.body.classList.add(theme.LIGHT);
 };
 
-refs.switcher.checked = localStorage.getItem('theme') === theme.DARK;
-refs.switcher.checked = refs.body.classList.contains(theme.DARK) ? true : false;
+ 
+refs.switcher.checked = refs.body.classList.contains(theme.DARK);
 
 function switchBox() {
     if (this.checked) {
